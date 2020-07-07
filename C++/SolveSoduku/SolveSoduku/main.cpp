@@ -13,81 +13,87 @@ using namespace std;
 class Solution {
 public:
     void solveSudoku(vector<vector<char>>& board) {
-        rows = vector<bitset<9>>(9, bitset<9>());
-        cols = vector<bitset<9>>(9, bitset<9>());
-        cells = vector<vector<bitset<9>>>(3, vector<bitset<9>>(3, bitset<9>()));
+        rows = vector<bitset<9>>( 9, bitset<9>{ false } );
+        cols = vector<bitset<9>>( 9, bitset<9>{ false } );
+        cells = vector<vector<bitset<9>>>( 3, vector<bitset<9>>( 3, bitset<9>{ false } ) );
         
-        int cnt = 0;
+        int emptySlotCount = 0;
         for (int i = 0; i < board.size(); i++) {
             for (int j = 0; j < board[i].size(); j++) {
-                cnt += (board[i][j] == '.');
-                if (board[i][j] == '.') continue;
-                int n = board[i][j] - '1';
-                rows[i] |= (1 << n);
-                cols[j] |= (1 << n);
-                cells[i / 3][j / 3] |= (1 << n);
+                if (board[i][j] == '.') emptySlotCount += 1;
+                else {
+                    // important! remember to setup rows, cols and cells data!
+                    int n = board[i][j] - '1';
+                    rows[i] |= 1 << n;
+                    cols[j] |= 1 << n;
+                    cells[i / 3][j / 3] = 1 << n;
+                }
             }
         }
-        dfs(board, cnt);
+        
+        dfs(board, emptySlotCount);
     }
     
-private:
-    
-    bool dfs(vector<vector<char>>& board, int cnt) {
-        if (cnt == 0) { return true; }                  // Problem solved
+    bool dfs(vector<vector<char>>& board, int emptySlotCount) {
+        // Problem solved, all slot is fulled
+        if (emptySlotCount == 0) return true;
         
-        auto next = getNext(board);
+        // Make decision:
+        auto coord = getNextMinChoiceSlot(board);
+        auto row = coord[0], col = coord[1];
         
-        auto bits = getPossibleStatus(next[0], next[1]);
-    
-        if (bits.count() == 0) return false;
+        auto curStatus = getPossibleStatus(row, col, board);
         
-        for (int n = 0; n < bits.size(); n++) {
-            if (!bits.test(n)) continue;
-            // make decision
-            fillNum(next[0], next[1], n, true);
-            board[next[0]][next[1]] = n + '1';
+        for (int i = 0; i < curStatus.size(); i++) {
+            if (curStatus.test(i) == false) continue;            // skip the non-empty slot
             
-            if (dfs(board, cnt - 1)) return true;
+            // try this number
+            fillNum(row, col, i, true);
+            board[row][col] = i + '1';
             
-            // dfs failed, undo decision
-            fillNum(next[0], next[1], n, false);
-            board[next[0]][next[1]] = '.';
+            if (dfs(board, emptySlotCount - 1)) return true;
+            
+            // undo changes
+            fillNum(row, col, i, false);
+            board[row][col] = '.';
         }
+        
         return false;
     }
     
+    // what is the possible status that (x, y) could be?
+    bitset<9> getPossibleStatus(int x, int y, vector<vector<char>>& board) {
+        return ~(rows[x] | cols[y] | cells[x / 3][y / 3]);
+    }
     
-    // 超出可能性最小的位置（包含已知信息最多的位置，这样的选择次数最少，贪心的思想
-    vector<int> getNext(vector<vector<char>>& board) {
+    vector<int> getNextMinChoiceSlot(vector<vector<char>>& board) {
+        unsigned long curMinChoice = 10;
         vector<int> ret;
-        size_t minCnt = 10;
         for (int i = 0; i < board.size(); i++) {
-            for (int j = 0; j < board[j].size(); j++) {
+            for (int j = 0; j < board[i].size(); j++) {
                 if (board[i][j] != '.') continue;
-                auto cur = getPossibleStatus(i, j);
-                if (cur.count() >= minCnt) continue;
-                ret = { i, j };
-                minCnt = cur.count();
+                auto cur = getPossibleStatus(i, j, board);
+                if (curMinChoice > cur.count()) {
+                    ret = { i, j };
+                    curMinChoice = cur.count();
+                }
             }
         }
         return ret;
     }
     
-    // 找出坐标 (i, j) 可以填入的数字
-    bitset<9> getPossibleStatus(int x, int y) {
-        return ~(rows[x] | cols[y] | cells[x / 3][y / 3]);
-    }
-    
+    // record the data
     void fillNum(int x, int y, int n, bool fillFlag) {
-        rows[x][n] = (fillFlag) ? (1) : (0);
-        cols[y][n] = (fillFlag) ? (1) : (0);
-        cells[x / 3][y / 3][n] = (fillFlag) ? (1) : (0);
+        rows[x][n] = fillFlag ? true : false;
+        cols[y][n] = fillFlag ? true : false;
+        cells[x / 3][y / 3][n] = fillFlag ? true : false;
     }
     
+private:
     vector<bitset<9>> rows;
     vector<bitset<9>> cols;
     vector<vector<bitset<9>>> cells;
+    
 };
 
 void printBoard(const vector<vector<char>>& board) {
