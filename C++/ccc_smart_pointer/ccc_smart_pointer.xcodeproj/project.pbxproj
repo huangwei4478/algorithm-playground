@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E4D225E251B21F90074D2AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D225D251B21F90074D2AD /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E4D2258251B21F90074D2AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E4D225A251B21F90074D2AD /* ccc_smart_pointer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ccc_smart_pointer; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4D225D251B21F90074D2AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0E4D226A251B2B850074D2AD /* libboost_graph-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_graph-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_graph-mt.a"; sourceTree = "<group>"; };
+		0E4D226B251B2B850074D2AD /* libboost_regex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_regex.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_regex.a; sourceTree = "<group>"; };
+		0E4D226C251B2B850074D2AD /* libboost_exception-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_exception-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_exception-mt.a"; sourceTree = "<group>"; };
+		0E4D226D251B2B850074D2AD /* libboost_timer-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_timer-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_timer-mt.a"; sourceTree = "<group>"; };
+		0E4D226E251B2B850074D2AD /* libboost_filesystem-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_filesystem-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_filesystem-mt.a"; sourceTree = "<group>"; };
+		0E4D226F251B2B850074D2AD /* libboost_wave.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_wave.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_wave.a; sourceTree = "<group>"; };
+		0E4D2270251B2B850074D2AD /* libboost_math_tr1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_math_tr1.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_tr1.a; sourceTree = "<group>"; };
+		0E4D2271251B2B850074D2AD /* libboost_type_erasure.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_type_erasure.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_type_erasure.a; sourceTree = "<group>"; };
+		0E4D2272251B2B850074D2AD /* libboost_contract.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_contract.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_contract.a; sourceTree = "<group>"; };
+		0E4D2273251B2B850074D2AD /* libboost_chrono-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_chrono-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_chrono-mt.a"; sourceTree = "<group>"; };
+		0E4D2274251B2B850074D2AD /* libboost_prg_exec_monitor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_prg_exec_monitor.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_prg_exec_monitor.a; sourceTree = "<group>"; };
+		0E4D2275251B2B850074D2AD /* libboost_math_c99-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_math_c99-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_c99-mt.a"; sourceTree = "<group>"; };
+		0E4D2276251B2B850074D2AD /* libboost_date_time.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_date_time.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_date_time.a; sourceTree = "<group>"; };
+		0E4D2277251B2B850074D2AD /* libboost_timer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_timer.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_timer.a; sourceTree = "<group>"; };
+		0E4D2278251B2B850074D2AD /* libboost_math_c99.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_math_c99.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_c99.a; sourceTree = "<group>"; };
+		0E4D2279251B2B850074D2AD /* libboost_wserialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_wserialization.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_wserialization.a; sourceTree = "<group>"; };
+		0E4D227A251B2B850074D2AD /* libboost_iostreams-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_iostreams-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_iostreams-mt.a"; sourceTree = "<group>"; };
+		0E4D227B251B2B850074D2AD /* libboost_container.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_container.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_container.a; sourceTree = "<group>"; };
+		0E4D227C251B2B850074D2AD /* libboost_atomic-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_atomic-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_atomic-mt.a"; sourceTree = "<group>"; };
+		0E4D227D251B2B850074D2AD /* libboost_random.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_random.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_random.a; sourceTree = "<group>"; };
+		0E4D227E251B2B850074D2AD /* libboost_math_c99f-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_math_c99f-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_c99f-mt.a"; sourceTree = "<group>"; };
+		0E4D227F251B2B860074D2AD /* libboost_math_tr1l-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_math_tr1l-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_tr1l-mt.a"; sourceTree = "<group>"; };
+		0E4D2280251B2B860074D2AD /* libboost_fiber-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_fiber-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_fiber-mt.a"; sourceTree = "<group>"; };
+		0E4D2281251B2B860074D2AD /* libboost_chrono.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_chrono.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_chrono.a; sourceTree = "<group>"; };
+		0E4D2282251B2B860074D2AD /* libboost_math_c99l.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_math_c99l.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_c99l.a; sourceTree = "<group>"; };
+		0E4D2283251B2B860074D2AD /* libboost_coroutine-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_coroutine-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_coroutine-mt.a"; sourceTree = "<group>"; };
+		0E4D2284251B2B860074D2AD /* libboost_log.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_log.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_log.a; sourceTree = "<group>"; };
+		0E4D2285251B2B860074D2AD /* libboost_exception.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_exception.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_exception.a; sourceTree = "<group>"; };
+		0E4D2286251B2B860074D2AD /* libboost_nowide.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_nowide.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_nowide.a; sourceTree = "<group>"; };
+		0E4D2287251B2B860074D2AD /* libboost_program_options-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_program_options-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_program_options-mt.a"; sourceTree = "<group>"; };
+		0E4D2288251B2B860074D2AD /* libboost_container-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_container-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_container-mt.a"; sourceTree = "<group>"; };
+		0E4D2289251B2B860074D2AD /* libboost_stacktrace_basic-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_stacktrace_basic-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_stacktrace_basic-mt.a"; sourceTree = "<group>"; };
+		0E4D228A251B2B860074D2AD /* libboost_thread-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_thread-mt.a"; sourceTree = "<group>"; };
+		0E4D228B251B2B860074D2AD /* libboost_math_tr1l.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_math_tr1l.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_tr1l.a; sourceTree = "<group>"; };
+		0E4D228C251B2B860074D2AD /* libboost_random-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_random-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_random-mt.a"; sourceTree = "<group>"; };
+		0E4D228D251B2B860074D2AD /* libboost_stacktrace_addr2line-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_stacktrace_addr2line-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_stacktrace_addr2line-mt.a"; sourceTree = "<group>"; };
+		0E4D228E251B2B860074D2AD /* libboost_math_tr1-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_math_tr1-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_tr1-mt.a"; sourceTree = "<group>"; };
+		0E4D228F251B2B860074D2AD /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_system.a; sourceTree = "<group>"; };
+		0E4D2290251B2B860074D2AD /* libboost_type_erasure-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_type_erasure-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_type_erasure-mt.a"; sourceTree = "<group>"; };
+		0E4D2291251B2B860074D2AD /* libboost_wave-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_wave-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_wave-mt.a"; sourceTree = "<group>"; };
+		0E4D2292251B2B860074D2AD /* libboost_coroutine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_coroutine.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_coroutine.a; sourceTree = "<group>"; };
+		0E4D2293251B2B860074D2AD /* libboost_regex-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_regex-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_regex-mt.a"; sourceTree = "<group>"; };
+		0E4D2294251B2B860074D2AD /* libboost_serialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_serialization.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_serialization.a; sourceTree = "<group>"; };
+		0E4D2295251B2B860074D2AD /* libboost_iostreams.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_iostreams.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_iostreams.a; sourceTree = "<group>"; };
+		0E4D2296251B2B860074D2AD /* libboost_log_setup.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_log_setup.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_log_setup.a; sourceTree = "<group>"; };
+		0E4D2297251B2B860074D2AD /* libboost_nowide-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_nowide-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_nowide-mt.a"; sourceTree = "<group>"; };
+		0E4D2298251B2B860074D2AD /* libboost_test_exec_monitor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_test_exec_monitor.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_test_exec_monitor.a; sourceTree = "<group>"; };
+		0E4D2299251B2B860074D2AD /* libboost_test_exec_monitor-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_test_exec_monitor-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_test_exec_monitor-mt.a"; sourceTree = "<group>"; };
+		0E4D229A251B2B860074D2AD /* libboost_contract-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_contract-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_contract-mt.a"; sourceTree = "<group>"; };
+		0E4D229B251B2B860074D2AD /* libboost_date_time-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_date_time-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_date_time-mt.a"; sourceTree = "<group>"; };
+		0E4D229C251B2B860074D2AD /* libboost_math_c99l-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_math_c99l-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_c99l-mt.a"; sourceTree = "<group>"; };
+		0E4D229D251B2B860074D2AD /* libboost_math_tr1f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_math_tr1f.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_tr1f.a; sourceTree = "<group>"; };
+		0E4D229E251B2B860074D2AD /* libboost_serialization-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_serialization-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_serialization-mt.a"; sourceTree = "<group>"; };
+		0E4D229F251B2B860074D2AD /* libboost_wserialization-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_wserialization-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_wserialization-mt.a"; sourceTree = "<group>"; };
+		0E4D22A0251B2B860074D2AD /* libboost_stacktrace_noop-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_stacktrace_noop-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_stacktrace_noop-mt.a"; sourceTree = "<group>"; };
+		0E4D22A1251B2B860074D2AD /* libboost_math_c99f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_math_c99f.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_c99f.a; sourceTree = "<group>"; };
+		0E4D22A2251B2B860074D2AD /* libboost_stacktrace_basic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_stacktrace_basic.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_stacktrace_basic.a; sourceTree = "<group>"; };
+		0E4D22A3251B2B860074D2AD /* libboost_graph.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_graph.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_graph.a; sourceTree = "<group>"; };
+		0E4D22A4251B2B860074D2AD /* libboost_unit_test_framework-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_unit_test_framework-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_unit_test_framework-mt.a"; sourceTree = "<group>"; };
+		0E4D22A5251B2B860074D2AD /* libboost_log_setup-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_log_setup-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_log_setup-mt.a"; sourceTree = "<group>"; };
+		0E4D22A6251B2B860074D2AD /* libboost_log-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_log-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_log-mt.a"; sourceTree = "<group>"; };
+		0E4D22A7251B2B860074D2AD /* libboost_context-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_context-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_context-mt.a"; sourceTree = "<group>"; };
+		0E4D22A8251B2B860074D2AD /* libboost_locale-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_locale-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_locale-mt.a"; sourceTree = "<group>"; };
+		0E4D22A9251B2B860074D2AD /* libboost_math_tr1f-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_math_tr1f-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_math_tr1f-mt.a"; sourceTree = "<group>"; };
+		0E4D22AA251B2B870074D2AD /* libboost_system-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_system-mt.a"; sourceTree = "<group>"; };
+		0E4D22AB251B2B870074D2AD /* libboost_stacktrace_addr2line.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_stacktrace_addr2line.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_stacktrace_addr2line.a; sourceTree = "<group>"; };
+		0E4D22AC251B2B870074D2AD /* libboost_stacktrace_noop.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_stacktrace_noop.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_stacktrace_noop.a; sourceTree = "<group>"; };
+		0E4D22AD251B2B870074D2AD /* libboost_unit_test_framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_unit_test_framework.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_unit_test_framework.a; sourceTree = "<group>"; };
+		0E4D22AE251B2B870074D2AD /* libboost_prg_exec_monitor-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_prg_exec_monitor-mt.a"; path = "../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_prg_exec_monitor-mt.a"; sourceTree = "<group>"; };
+		0E4D22AF251B2B870074D2AD /* libboost_program_options.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_program_options.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_program_options.a; sourceTree = "<group>"; };
+		0E4D22B0251B2B870074D2AD /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = ../../../../../../../usr/local/Cellar/boost/1.73.0/lib/libboost_filesystem.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E4D2257251B21F90074D2AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E4D2251251B21F90074D2AD = {
+			isa = PBXGroup;
+			children = (
+				0E4D225C251B21F90074D2AD /* ccc_smart_pointer */,
+				0E4D225B251B21F90074D2AD /* Products */,
+				0E4D2269251B2B850074D2AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0E4D225B251B21F90074D2AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E4D225A251B21F90074D2AD /* ccc_smart_pointer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E4D225C251B21F90074D2AD /* ccc_smart_pointer */ = {
+			isa = PBXGroup;
+			children = (
+				0E4D225D251B21F90074D2AD /* main.cpp */,
+			);
+			path = ccc_smart_pointer;
+			sourceTree = "<group>";
+		};
+		0E4D2269251B2B850074D2AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E4D227C251B2B850074D2AD /* libboost_atomic-mt.a */,
+				0E4D2273251B2B850074D2AD /* libboost_chrono-mt.a */,
+				0E4D2281251B2B860074D2AD /* libboost_chrono.a */,
+				0E4D2288251B2B860074D2AD /* libboost_container-mt.a */,
+				0E4D227B251B2B850074D2AD /* libboost_container.a */,
+				0E4D22A7251B2B860074D2AD /* libboost_context-mt.a */,
+				0E4D229A251B2B860074D2AD /* libboost_contract-mt.a */,
+				0E4D2272251B2B850074D2AD /* libboost_contract.a */,
+				0E4D2283251B2B860074D2AD /* libboost_coroutine-mt.a */,
+				0E4D2292251B2B860074D2AD /* libboost_coroutine.a */,
+				0E4D229B251B2B860074D2AD /* libboost_date_time-mt.a */,
+				0E4D2276251B2B850074D2AD /* libboost_date_time.a */,
+				0E4D226C251B2B850074D2AD /* libboost_exception-mt.a */,
+				0E4D2285251B2B860074D2AD /* libboost_exception.a */,
+				0E4D2280251B2B860074D2AD /* libboost_fiber-mt.a */,
+				0E4D226E251B2B850074D2AD /* libboost_filesystem-mt.a */,
+				0E4D22B0251B2B870074D2AD /* libboost_filesystem.a */,
+				0E4D226A251B2B850074D2AD /* libboost_graph-mt.a */,
+				0E4D22A3251B2B860074D2AD /* libboost_graph.a */,
+				0E4D227A251B2B850074D2AD /* libboost_iostreams-mt.a */,
+				0E4D2295251B2B860074D2AD /* libboost_iostreams.a */,
+				0E4D22A8251B2B860074D2AD /* libboost_locale-mt.a */,
+				0E4D22A5251B2B860074D2AD /* libboost_log_setup-mt.a */,
+				0E4D2296251B2B860074D2AD /* libboost_log_setup.a */,
+				0E4D22A6251B2B860074D2AD /* libboost_log-mt.a */,
+				0E4D2284251B2B860074D2AD /* libboost_log.a */,
+				0E4D2275251B2B850074D2AD /* libboost_math_c99-mt.a */,
+				0E4D2278251B2B850074D2AD /* libboost_math_c99.a */,
+				0E4D227E251B2B850074D2AD /* libboost_math_c99f-mt.a */,
+				0E4D22A1251B2B860074D2AD /* libboost_math_c99f.a */,
+				0E4D229C251B2B860074D2AD /* libboost_math_c99l-mt.a */,
+				0E4D2282251B2B860074D2AD /* libboost_math_c99l.a */,
+				0E4D228E251B2B860074D2AD /* libboost_math_tr1-mt.a */,
+				0E4D2270251B2B850074D2AD /* libboost_math_tr1.a */,
+				0E4D22A9251B2B860074D2AD /* libboost_math_tr1f-mt.a */,
+				0E4D229D251B2B860074D2AD /* libboost_math_tr1f.a */,
+				0E4D227F251B2B860074D2AD /* libboost_math_tr1l-mt.a */,
+				0E4D228B251B2B860074D2AD /* libboost_math_tr1l.a */,
+				0E4D2297251B2B860074D2AD /* libboost_nowide-mt.a */,
+				0E4D2286251B2B860074D2AD /* libboost_nowide.a */,
+				0E4D22AE251B2B870074D2AD /* libboost_prg_exec_monitor-mt.a */,
+				0E4D2274251B2B850074D2AD /* libboost_prg_exec_monitor.a */,
+				0E4D2287251B2B860074D2AD /* libboost_program_options-mt.a */,
+				0E4D22AF251B2B870074D2AD /* libboost_program_options.a */,
+				0E4D228C251B2B860074D2AD /* libboost_random-mt.a */,
+				0E4D227D251B2B850074D2AD /* libboost_random.a */,
+				0E4D2293251B2B860074D2AD /* libboost_regex-mt.a */,
+				0E4D226B251B2B850074D2AD /* libboost_regex.a */,
+				0E4D229E251B2B860074D2AD /* libboost_serialization-mt.a */,
+				0E4D2294251B2B860074D2AD /* libboost_serialization.a */,
+				0E4D228D251B2B860074D2AD /* libboost_stacktrace_addr2line-mt.a */,
+				0E4D22AB251B2B870074D2AD /* libboost_stacktrace_addr2line.a */,
+				0E4D2289251B2B860074D2AD /* libboost_stacktrace_basic-mt.a */,
+				0E4D22A2251B2B860074D2AD /* libboost_stacktrace_basic.a */,
+				0E4D22A0251B2B860074D2AD /* libboost_stacktrace_noop-mt.a */,
+				0E4D22AC251B2B870074D2AD /* libboost_stacktrace_noop.a */,
+				0E4D22AA251B2B870074D2AD /* libboost_system-mt.a */,
+				0E4D228F251B2B860074D2AD /* libboost_system.a */,
+				0E4D2299251B2B860074D2AD /* libboost_test_exec_monitor-mt.a */,
+				0E4D2298251B2B860074D2AD /* libboost_test_exec_monitor.a */,
+				0E4D228A251B2B860074D2AD /* libboost_thread-mt.a */,
+				0E4D226D251B2B850074D2AD /* libboost_timer-mt.a */,
+				0E4D2277251B2B850074D2AD /* libboost_timer.a */,
+				0E4D2290251B2B860074D2AD /* libboost_type_erasure-mt.a */,
+				0E4D2271251B2B850074D2AD /* libboost_type_erasure.a */,
+				0E4D22A4251B2B860074D2AD /* libboost_unit_test_framework-mt.a */,
+				0E4D22AD251B2B870074D2AD /* libboost_unit_test_framework.a */,
+				0E4D2291251B2B860074D2AD /* libboost_wave-mt.a */,
+				0E4D226F251B2B850074D2AD /* libboost_wave.a */,
+				0E4D229F251B2B860074D2AD /* libboost_wserialization-mt.a */,
+				0E4D2279251B2B850074D2AD /* libboost_wserialization.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E4D2259251B21F90074D2AD /* ccc_smart_pointer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4D2261251B21F90074D2AD /* Build configuration list for PBXNativeTarget "ccc_smart_pointer" */;
+			buildPhases = (
+				0E4D2256251B21F90074D2AD /* Sources */,
+				0E4D2257251B21F90074D2AD /* Frameworks */,
+				0E4D2258251B21F90074D2AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ccc_smart_pointer;
+			productName = ccc_smart_pointer;
+			productReference = 0E4D225A251B21F90074D2AD /* ccc_smart_pointer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E4D2252251B21F90074D2AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					0E4D2259251B21F90074D2AD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 0E4D2255251B21F90074D2AD /* Build configuration list for PBXProject "ccc_smart_pointer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E4D2251251B21F90074D2AD;
+			productRefGroup = 0E4D225B251B21F90074D2AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E4D2259251B21F90074D2AD /* ccc_smart_pointer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E4D2256251B21F90074D2AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4D225E251B21F90074D2AD /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E4D225F251B21F90074D2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0E4D2260251B21F90074D2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0E4D2262251B21F90074D2AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4D772C6B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0E4D2263251B21F90074D2AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HK4D772C6B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E4D2255251B21F90074D2AD /* Build configuration list for PBXProject "ccc_smart_pointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4D225F251B21F90074D2AD /* Debug */,
+				0E4D2260251B21F90074D2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E4D2261251B21F90074D2AD /* Build configuration list for PBXNativeTarget "ccc_smart_pointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4D2262251B21F90074D2AD /* Debug */,
+				0E4D2263251B21F90074D2AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E4D2252251B21F90074D2AD /* Project object */;
+}
