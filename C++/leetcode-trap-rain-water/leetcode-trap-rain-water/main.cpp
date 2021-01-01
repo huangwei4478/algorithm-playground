@@ -12,48 +12,47 @@
 using namespace std;
 
 int trap(vector<int>& height) {
-    if (height.size() == 0) return 0;
-    int length = int(height.size());
-    int ans = 0;
+    int n = height.size();
     
-    for (int i = 1; i < length - 1; i++) {
+    int res = 0;
+    
+    for (int i = 1; i < n - 1; i++) {
         int l_max = 0, r_max = 0;
-        for (int j = i; j < length; j++) {
+        for (int j = i; j < n; j++) {
             r_max = max(r_max, height[j]);
         }
-        
-        for (int j = i; j >= 0; --j) {
+        for(int j = i; j >= 0; j--) {
             l_max = max(l_max, height[j]);
         }
-        
-        ans += min(l_max, r_max) - height[i];
+        res += (min(l_max, r_max) - height[i]);
     }
-    
-    return ans;
+    return res;
 }
 
 int trap_memo(vector<int>& height) {
     if (height.size() == 0) return 0;
-    int length = int(height.size());
+    int n = int(height.size());
+    int res = 0;
     
-    vector<int> l_max(length), r_max(length);
+    vector<int> l_max(n), r_max(n);
+    
     l_max[0] = height[0];
-    r_max[length - 1] = height[length - 1];
-    int ans = 0;
+    r_max[n - 1] = height[n - 1];
     
-    for (int i = 1; i < length; i++) {
-        l_max[i] = max(l_max[i - 1], height[i]);
+    // from left to right
+    for (int i = 1; i < n; i++) {
+        l_max[i] = max(height[i], l_max[i - 1]);
+    }
+    // from right to left
+    for (int i = n - 2; i >= 0; i--) {
+        r_max[i] = max(height[i], r_max[i + 1]);
     }
     
-    for (int i = length - 2; i >= 0; i--) {
-        r_max[i] = max(r_max[i + 1], height[i]);
+    for (int i = 1; i < n - 1; i++) {
+        res += min(l_max[i], r_max[i]) - height[i];
     }
     
-    for (int i = 1; i < length - 1; i++) {
-        ans += min(l_max[i], r_max[i]) - height[i];
-    }
-    
-    return ans;
+    return res;
 }
 
 int trap_double_pointer(vector<int>& height) {
