@@ -20,7 +20,7 @@ template <typename T>
 int binarySearch(T arr[], int n, T target) {
 	int l = 0, r = n;						// 在 [l...r) 的范围里，寻找target（确定定义是非常关键的！）
 	while ( l < r ) {							// 当 l == r 的时候，区间[l...r) 是无效的
-		int mid = (l + r) / 2;
+		int mid = l + (r - l) / 2;
 		if ( arr[mid] == target ) {
 			return mid;
 		}
