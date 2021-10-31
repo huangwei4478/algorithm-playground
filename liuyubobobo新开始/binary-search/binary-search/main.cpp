@@ -18,17 +18,17 @@ using namespace std;
 
 template <typename T>
 int binarySearch(T arr[], int n, T target) {
-	int l = 0, r = n - 1;						// 在 [l...r] 的范围里，寻找target（确定定义是非常关键的！）
-	while ( l <= r ) {							// 当 l == r 的时候，区间[l...r] 依然是有效的
+	int l = 0, r = n;						// 在 [l...r) 的范围里，寻找target（确定定义是非常关键的！）
+	while ( l < r ) {							// 当 l == r 的时候，区间[l...r) 是无效的
 		int mid = (l + r) / 2;
 		if ( arr[mid] == target ) {
 			return mid;
 		}
 		
 		if ( target > arr[mid] ) {
-			l = mid + 1;						// target 在 [mid + 1 ... r] 中
+			l = mid + 1;						// target 在 [mid + 1 ... r) 中
 		} else {
-			r = mid - 1;						// target 在 [l ... r - 1] 中
+			r = mid;							// target 在 [l ... mid) 中
 		}
 	}
 	
