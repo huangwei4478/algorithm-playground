@@ -6,9 +6,18 @@
 //
 
 #include <iostream>
+#include "Array.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Array *array = new Array(20);
+    for (int i = 0; i < 10; ++i) {
+        array->addLast(i);
+    }
+    array->print();
+    array->add(1, 100);
+    array->addFirst(-1);
+    array->print();
+    array = nullptr;
+    delete array;
     return 0;
 }
