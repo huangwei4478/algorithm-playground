@@ -60,6 +60,34 @@ public:
         size++;
     }
     
+    // 删除索引index 的元素, 返回删除的元素
+    int remove(int index) {
+        assert(size < capacity);
+        assert(index >= 0 && index < size);
+        
+        int ret = data[index];
+        for (int i = index + 1; i < size; i++) {
+            data[i - 1] = data[i];
+        }
+        size--;
+        return ret;
+    }
+    
+    int removeFirst() {
+        return remove(0);
+    }
+    
+    int removeLast() {
+        return remove(size - 1);
+    }
+    
+    void removeElement(int e) {
+        int index = find(e);
+        if (index != -1) {
+            remove(index);
+        }
+    }
+    
     int get(int index) {
         assert(index >= 0 && index < size);
         return data[index];
@@ -68,6 +96,27 @@ public:
     void set(int index, int e) {
         assert(index >= 0 && index < size);
         data[index] = e;
+    }
+    
+    bool contains(int e) {
+        for (int i = 0; i < size; i++) {
+            if (data[i] == e) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    // 查找数组中元素e所在的索引，如果不存在元素e，则返回-1
+    int find(int e) {
+        for (int i = 0; i < size; i++) {
+            if (data[i] == e) {
+                return i;
+            }
+        }
+        
+        return -1;
     }
     
     //打印数组的所有元素
