@@ -13,10 +13,11 @@
 
 using namespace std;
 
+template<typename T>
 class Array {
 public:
     Array(int capacity) {
-        data = new int[capacity];
+        data = new T[capacity];
         size = 0;
         this -> capacity = capacity;
     }
@@ -39,16 +40,16 @@ public:
         return size == capacity;
     }
     
-    void addLast(int e) {
+    void addLast(T e) {
         add(size, e);
     }
     
-    void addFirst(int e) {
+    void addFirst(T e) {
         add(0, e);
     }
     
     /// 在 index 的位置插入一个新元素 e
-    void add(int index, int e) {
+    void add(int index, T e) {
         assert(size < capacity);
         assert(index >= 0 && index <= size);
         // move A[index, size) a slot backward
@@ -61,7 +62,7 @@ public:
     }
     
     // 删除索引index 的元素, 返回删除的元素
-    int remove(int index) {
+    T remove(int index) {
         assert(size < capacity);
         assert(index >= 0 && index < size);
         
@@ -73,32 +74,32 @@ public:
         return ret;
     }
     
-    int removeFirst() {
+    T removeFirst() {
         return remove(0);
     }
     
-    int removeLast() {
+    T removeLast() {
         return remove(size - 1);
     }
     
-    void removeElement(int e) {
+    void removeElement(T e) {
         int index = find(e);
         if (index != -1) {
             remove(index);
         }
     }
     
-    int get(int index) {
+    T get(int index) {
         assert(index >= 0 && index < size);
         return data[index];
     }
     
-    void set(int index, int e) {
+    void set(int index, T e) {
         assert(index >= 0 && index < size);
         data[index] = e;
     }
     
-    bool contains(int e) {
+    bool contains(T e) {
         for (int i = 0; i < size; i++) {
             if (data[i] == e) {
                 return true;
@@ -109,7 +110,7 @@ public:
     }
     
     // 查找数组中元素e所在的索引，如果不存在元素e，则返回-1
-    int find(int e) {
+    int find(T e) {
         for (int i = 0; i < size; i++) {
             if (data[i] == e) {
                 return i;
