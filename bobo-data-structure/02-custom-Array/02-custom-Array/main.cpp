@@ -9,7 +9,7 @@
 #include "Array.hpp"
 
 int main(int argc, const char * argv[]) {
-    Array<int> *array = new Array<int>(20);
+    Array<int> *array = new Array<int>();
     for (int i = 0; i < 10; ++i) {
         array->addLast(i);
     }

@@ -50,8 +50,12 @@ public:
     
     /// 在 index 的位置插入一个新元素 e
     void add(int index, T e) {
-        assert(size < capacity);
         assert(index >= 0 && index <= size);
+        
+        if (size == capacity) {
+            resize(2 * capacity);
+        }
+        
         // move A[index, size) a slot backward
         for (int i = size - 1; i >= index; i--) {
             data[i + 1] = data[i];
@@ -63,7 +67,6 @@ public:
     
     // 删除索引index 的元素, 返回删除的元素
     T remove(int index) {
-        assert(size < capacity);
         assert(index >= 0 && index < size);
         
         int ret = data[index];
@@ -71,6 +74,10 @@ public:
             data[i - 1] = data[i];
         }
         size--;
+        
+        if (size <= capacity / 2) {
+            resize(capacity / 2);
+        }
         return ret;
     }
     
@@ -136,9 +143,19 @@ public:
     }
     
 private:
-    int *data;
+    T *data;
     int size;       // A[0...size)
     int capacity;
+    
+    void resize(int newCapacity) {
+        T *newData = new T[newCapacity];
+        for (int i = 0; i < capacity; i++) {
+            newData[i] = data[i];
+        }
+        capacity = newCapacity;
+        delete data;
+        data = newData;
+    }
 };
 
 #endif /* Array_hpp */
