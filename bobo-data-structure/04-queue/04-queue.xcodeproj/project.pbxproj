@@ -28,6 +28,7 @@
 		0ECA6BB5280321B200D4284C /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		0ECA6BB6280322FE00D4284C /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
 		0ECA6BB72803233400D4284C /* ArrayQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayQueue.h; sourceTree = "<group>"; };
+		0ECA6BB828032CF900D4284C /* CircularQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 				0ECA6BB5280321B200D4284C /* Queue.h */,
 				0ECA6BB6280322FE00D4284C /* Array.h */,
 				0ECA6BB72803233400D4284C /* ArrayQueue.h */,
+				0ECA6BB828032CF900D4284C /* CircularQueue.h */,
 			);
 			path = "04-queue";
 			sourceTree = "<group>";
