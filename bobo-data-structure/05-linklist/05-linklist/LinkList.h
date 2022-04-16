@@ -25,12 +25,12 @@ template <typename T>
 class LinkedList {
 public:
     LinkedList() {
-        this -> head = nullptr;
+        this -> dummyHead = new Node<T>(nullptr, nullptr);
         this -> size = 0;
     }
     
     ~LinkedList() {
-        deleteNode(head);
+        deleteNode(dummyHead);
     }
     
     int getSize() {
@@ -43,27 +43,20 @@ public:
     
     /// 在链表的头部添加新元素e
     void addFirst(T e) {
-        head = new Node<T>(e, head);
-        size += 1;
+        add(0, e);
     }
-    
+
     /// 在链表的index（0-based）位置添加新元素e
     void add(int index, T e) {
         assert(index >= 0 && index <= size);
         
-        if (index == 0) {
-            addFirst(e);
-        } else {
-            Node<T> *prev = head;
-            for (int i = 0; i < (index - 1); i++) {
-                prev = prev -> next;
-            }
-            
-            Node<T> *newNode = new Node<T>(e);
-            newNode -> next = prev -> next;
-            prev -> next = newNode;
-            size += 1;
+        Node<T> *prev = dummyHead;
+        for (int i = 0; i < index; i++) {
+            prev = prev -> next;
         }
+        
+        prev -> next = new Node(e, prev -> next);
+        size += 1;
     }
     
     /// 在链表的末尾添加新元素
@@ -74,7 +67,7 @@ public:
     
 private:
     int size;
-    Node<T> *head;
+    Node<T> *dummyHead;
     
     // delete node recursively
     // fold right
