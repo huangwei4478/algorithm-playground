@@ -10,7 +10,14 @@
 
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    LinkedList<int> *linkedList = new LinkedList<int>();
+    for (int i = 0; i < 5; i++) {
+        linkedList -> addFirst(i);
+        linkedList -> print();
+    }
+    
+    linkedList -> add(2, 666);
+    linkedList -> print();
+    
     return 0;
 }
