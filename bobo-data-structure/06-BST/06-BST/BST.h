@@ -53,9 +53,9 @@ private:
                 node -> left = add(node -> left, e);
             } else if (e > node -> val) {
                 node -> right = add(node -> right, e);
-            } else {
-                return node;
             }
+            
+            return node;
         }
     }
 };
