@@ -26,6 +26,10 @@
 		0EC1ED9E2808790D008BCB29 /* 05-linklist */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "05-linklist"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC1EDA12808790D008BCB29 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0EC1EDA82808791D008BCB29 /* LinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		0EC1EDA9280BC2D7008BCB29 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		0EC1EDAA280BC3B3008BCB29 /* LinkListStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkListStack.h; sourceTree = "<group>"; };
+		0EC1EDAB280BD9BB008BCB29 /* ArrayStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrayStack.h; path = "../../03-stack/03-stack/ArrayStack.h"; sourceTree = "<group>"; };
+		0EC1EDAC280BD9C7008BCB29 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Array.h; path = "../../03-stack/03-stack/Array.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,10 @@
 			children = (
 				0EC1EDA12808790D008BCB29 /* main.cpp */,
 				0EC1EDA82808791D008BCB29 /* LinkList.h */,
+				0EC1EDA9280BC2D7008BCB29 /* Stack.h */,
+				0EC1EDAB280BD9BB008BCB29 /* ArrayStack.h */,
+				0EC1EDAA280BC3B3008BCB29 /* LinkListStack.h */,
+				0EC1EDAC280BD9C7008BCB29 /* Array.h */,
 			);
 			path = "05-linklist";
 			sourceTree = "<group>";

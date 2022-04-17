@@ -7,25 +7,34 @@
 
 #include <iostream>
 #include "LinkList.h"
+#include "LinkListStack.h"
+#include "ArrayStack.h"
 
-
-int main(int argc, const char * argv[]) {
-    LinkedList<int> *linkedList = new LinkedList<int>();
-    for (int i = 0; i < 5; i++) {
-        linkedList -> addFirst(i);
-        linkedList -> print();
+double testStack(Stack<int> *stack, int opCount) {
+    double startTime = clock();
+    srand(777);
+    
+    for (int i = 0; i < opCount; i++) {
+        stack -> push(rand());
     }
     
-    linkedList -> add(2, 666);
-    linkedList -> print();
+    for (int i = 0; i < opCount; i++) {
+        stack -> pop();
+    }
     
-    linkedList -> remove(2);
-    linkedList -> print();
+    double endTime = clock();
     
-    linkedList -> removeFirst();
-    linkedList -> print();
+    return (endTime - startTime) / CLOCKS_PER_SEC;
+}
+
+int main(int argc, const char * argv[]) {
+    int opCount = 1000000;
     
-    linkedList -> removeLast();
-    linkedList -> print();
+    ArrayStack<int> *arrayStack = new ArrayStack<int>{};
+    LinkListStack<int> *linklistStack = new LinkListStack<int>{};
+    
+    std::cout << testStack(arrayStack, opCount) << " s for ArrayStack" << std::endl;
+    std::cout << testStack(linklistStack, opCount) << " s for linkListStack" << std::endl;
+    
     return 0;
 }

@@ -19,6 +19,8 @@ public:
         array = new Array<T>(capacity);
     }
     
+    ArrayStack(): ArrayStack(10) {}
+    
     ~ArrayStack() {
         delete array;
         array = nullptr;
