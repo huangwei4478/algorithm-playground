@@ -113,6 +113,30 @@ public:
         return false;
     }
     
+    /// 在index（0-based）上删除对应的节点
+    T remove(int index) {
+        assert(index >= 0 && index < size);
+        
+        Node<T> *prev = dummyHead;
+        for (int i = 0; i < index; i++) {
+            prev = prev -> next;
+        }
+        
+        Node<T> *ret = prev -> next;
+        prev -> next = ret -> next;
+        ret -> next = nullptr;
+        size -= 1;
+        return ret -> e;
+    }
+    
+    T removeFirst() {
+        return remove(0);
+    }
+    
+    T removeLast() {
+        return remove(size - 1);
+    }
+    
     void print() {
         Node<T> *prev = dummyHead;
             std::cout << "LinkedList: size = " << size << std::endl;

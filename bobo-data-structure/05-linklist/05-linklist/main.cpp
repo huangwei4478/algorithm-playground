@@ -19,5 +19,13 @@ int main(int argc, const char * argv[]) {
     linkedList -> add(2, 666);
     linkedList -> print();
     
+    linkedList -> remove(2);
+    linkedList -> print();
+    
+    linkedList -> removeFirst();
+    linkedList -> print();
+    
+    linkedList -> removeLast();
+    linkedList -> print();
     return 0;
 }
