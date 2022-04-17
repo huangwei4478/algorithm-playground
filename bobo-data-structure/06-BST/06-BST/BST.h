@@ -39,6 +39,9 @@ public:
         add(root, e);
     }
     
+    bool contains(T e) {
+        return contains(root, e);
+    }
     
 private:
     Node<T>* root;
@@ -56,6 +59,20 @@ private:
             }
             
             return node;
+        }
+    }
+    
+    /// 以Node 为节点开始寻找，有没有元素e
+    /// 挂靠在 Node 节点以内的树中
+    bool contains(Node<T> *node, T e) {
+        if (node == nullptr) { return false; }
+        
+        if (node -> e == e) {
+            return true;
+        } else if (e < node -> e) {
+            return contains(node -> left, e);
+        } else {
+            return contains(node -> right, e);
         }
     }
 };
