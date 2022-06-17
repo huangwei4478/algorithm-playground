@@ -1,3 +1,0 @@
-/Users/huangwei/Documents/GitHub/algorithm-playground/bobo-data-structure/07-linklist-leetcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/huangwei/Documents/GitHub/algorithm-playground/bobo-data-structure/07-linklist-leetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/huangwei/Documents/GitHub/algorithm-playground/bobo-data-structure/07-linklist-leetcode/cmake-build-debug/CMakeFiles/07_linklist_leetcode.dir
